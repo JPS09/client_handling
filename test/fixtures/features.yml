@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  cost: 1.5
+  delivery_date: 2023-02-21
+  pack: one
+  status: one
+
+two:
+  description: MyText
+  cost: 1.5
+  delivery_date: 2023-02-21
+  pack: two
+  status: two
