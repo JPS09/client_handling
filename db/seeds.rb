@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+statuses = ['En cours de chiffrage', 'Envoyé au client', 'Stand-by', 'Validé par le client', 'Abandonné',
+            'En Production']
+
+statuses.each do |status|
+  Status.create!(stage: status)
+end
