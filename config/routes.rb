@@ -4,4 +4,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root 'packs#index'
+  resources :packs, only: %i[new update show edit create] do
+    resources :features, only: %i[index new create update edit]
+  end
+
+  resources :clients, only: %i[new edit create update]
 end
